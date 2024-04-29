@@ -48,6 +48,7 @@ body {
   width: 80%;
   margin: 0 auto;
   padding: 0 15px;
+  padding-top: 50px;
 }
 body::before {
   content: "";
