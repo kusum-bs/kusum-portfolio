@@ -16,38 +16,20 @@
 }
 
 .marquee-text {
-  position: absolute;
+  position: fixed;
   white-space: nowrap;
   color: rgb(201, 211, 203); /* Adjust text color */
   font-size: 44px; /* Adjust font size */
   font-family: "Jersey 15", sans-serif; /* Specify the arcade gamer font */
-  animation: marquee 10s linear infinite; /* Adjust duration as needed */
+  animation: marquee 15s linear infinite; /* Adjust duration as needed */
 }
 
-
-
-/* Adjust positions of text elements */
-.marquee-text:nth-child(2) { left: 25%; }
-.marquee-text:nth-child(3) { left: 50%; }
-.marquee-text:nth-child(4) { left: 75%; }
-
 @keyframes marquee {
-  0% { left: 100%; }
-  100% { left: -100%; }
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
 }
 
 /* Adjust animation delay for each text element */
-.marquee-text:nth-child(2) {
-  animation-delay: 1s; /* Delay for the second text */
-}
-
-.marquee-text:nth-child(3) {
-  animation-delay: 1s; /* Delay for the third text */
-}
-
-.marquee-text:nth-child(4) {
-  animation-delay: 1s; /* Delay for the fourth text */
-}
 .jersey-15-regular {
   font-family: "Jersey 15", sans-serif;
   font-weight: 400;
@@ -60,17 +42,23 @@ body {
   color: #fff;
   position: relative;
   background: transparent;
+  background-attachment: fixed;
 }
-
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../img/bg_newest.png") top right no-repeat;
+  background: #040404 url("../img/bg-up.png") top right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
   top: 0;
   height: 100vh;
+  bottom: 0;
   z-index: -1;
 }
 
@@ -97,6 +85,7 @@ h4,
 h5,
 h6 {
   font-family: "Raleway", sans-serif;
+   margin: 0;
 }
 
 /*--------------------------------------------------------------
@@ -227,13 +216,18 @@ h6 {
   margin: 0;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   #header.header-top {
     height: 60px;
   }
-
+  .container {
+    width: 100%;
+}
   #header.header-top h1 {
     font-size: 26px;
+  }
+  .marquee-container {
+    font-size: 44px; /* Adjust font size for mobile */
   }
 }
 
