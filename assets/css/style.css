@@ -16,7 +16,7 @@
 }
 
 .marquee-text {
-  position: fixed;
+  position: fixed; 
   white-space: nowrap;
   color: rgb(201, 211, 203); /* Adjust text color */
   font-size: 25px; /* Adjust font size */
