@@ -20,7 +20,7 @@
   white-space: nowrap;
   color: rgb(201, 211, 203); /* Adjust text color */
   font-size: 44px; /* Adjust font size */
-  font-family: "Jersey 15", sans-serif; /* Specify the arcade gamer font */
+  font-family: "Open Sans", sans-serif; /* Specify the arcade gamer font */
   animation: marquee 15s linear infinite; /* Adjust duration as needed */
 }
 
@@ -53,7 +53,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../img/bg-up.png") top right no-repeat;
+  background: #040404 url("../img/bgm-img.png") top right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
