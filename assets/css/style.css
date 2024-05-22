@@ -19,7 +19,7 @@
   position: fixed;
   white-space: nowrap;
   color: rgb(201, 211, 203); /* Adjust text color */
-  font-size: 44px; /* Adjust font size */
+  font-size: 25px; /* Adjust font size */
   font-family: "Open Sans", sans-serif; /* Specify the arcade gamer font */
   animation: marquee 15s linear infinite; /* Adjust duration as needed */
 }
